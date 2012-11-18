@@ -471,10 +471,6 @@ function state:stand()
         end
         
         self.player_bets[1] = self.original_bet
-        
-        if self.player.money < self.player_bets[1] then
-            self.player_bets[1] = self.player.money
-        end
 
         self:dealMenu()
 
